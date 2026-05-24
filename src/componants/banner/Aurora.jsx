@@ -140,8 +140,7 @@ export default function Aurora(props) {
         program.uniforms.uResolution.value = [width, height];
       }
     }
-    window.addEventListener('resize', resize);
-
+    window.addEventListener('resize', resize); 
     const geometry = new Triangle(gl);
     if (geometry.attributes.uv) {
       delete geometry.attributes.uv;
@@ -197,4 +196,5 @@ export default function Aurora(props) {
   }, [amplitude]);
 
   return <div ref={ctnDom} className="w-full h-full" />;
+  
 }

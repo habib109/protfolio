@@ -21,12 +21,12 @@ const Navbar = () => {
         <div className="flex h-20 items-center justify-between">
 
           {/* Logo */}
-          <NavLink to="/" className="text-2xl font-bold text-white">
+          <NavLink to="/" className="text-2xl font-bold text-white ">
             Dev<span className="text-cyan-400">.</span>
           </NavLink>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex items-center gap-8">
+          <ul className="hidden md:flex items-center gap-6">
             {navLinks.map((item) => (
               <li key={item.name}>
                 <NavLink
