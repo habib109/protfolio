@@ -1,6 +1,7 @@
 import React from "react";
 import Aurora from "./Aurora";
 import { Typewriter } from "react-simple-typewriter";
+import HeroRobot from "./HeroRobot";
 
 const Banner = () => {
     return (
@@ -124,93 +125,26 @@ const Banner = () => {
 
                         </div>
 
-                        {/* RIGHT */}
+                       {/* right */}
+<div className="relative flex justify-end items-center">
 
-                        <div className="flex justify-center items-center relative">
+  {/* floating stats */}
+  <div className="absolute top-28 left-10 z-20 backdrop-blur-xl bg-[#13233f]/70 p-5 rounded-3xl border border-cyan-500/20">
+      <h2 className="text-3xl font-bold text-white">25+</h2>
+      <p className="text-gray-400">Projects</p>
+  </div>
 
-                            {/* outer glow */}
-                            <div className="absolute w-[420px] h-[420px] bg-cyan-500/20 blur-[120px] rounded-full"></div>
+  <div className="absolute bottom-32 left-20 z-20 backdrop-blur-xl bg-[#13233f]/70 p-5 rounded-3xl border border-cyan-500/20">
+      <h2 className="text-3xl font-bold text-white">2+</h2>
+      <p className="text-gray-400">Years Exp</p>
+  </div>
 
-                            {/* main card */}
-                            <div className="relative z-10 backdrop-blur-xl bg-white/5 border border-white/10 rounded-[30px] p-6 w-[340px] shadow-2xl">
+  {/* robot */}
+  <div className="scale-[1.45] translate-x-20">
+      <HeroRobot />
+  </div>
 
-                                {/* top */}
-                                <div className="flex items-center gap-4">
-                                    <img
-                                        src="/Habib.png"
-                                        alt=""
-                                        className="w-20 h-20 rounded-full border-2 border-cyan-400 object-cover"
-                                    />
-
-                                    <div>
-                                        <h3 className="text-white text-xl font-bold">
-                                            Habib Dev.
-                                        </h3>
-
-                                        <p className="text-cyan-400">
-                                            Frontend Engineer
-                                        </p>
-
-                                        <div className="flex items-center gap-2 mt-2">
-                                            <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></div>
-
-                                            <span className="text-gray-400 text-sm">
-                                                Available for work
-                                            </span>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                {/* skills */}
-                                <div className="flex flex-wrap gap-2 mt-8">
-
-                                    {[
-                                        "React",
-                                        "Tailwind",
-                                        "GSAP",
-                                        "Framer",
-                                        "Next JS"
-                                    ].map((skill) => (
-                                        <span
-                                            key={skill}
-                                            className="px-4 py-2 rounded-full bg-white/5 border border-cyan-400/20 text-cyan-300 text-sm"
-                                        >
-                                            {skill}
-                                        </span>
-                                    ))}
-
-                                </div>
-
-                                {/* stats */}
-                                <div className="grid grid-cols-2 gap-4 mt-8">
-
-                                    <div className="bg-black/30 p-4 rounded-xl">
-                                        <h2 className="text-white text-2xl font-bold">
-                                            25+
-                                        </h2>
-
-                                        <p className="text-gray-400 text-sm">
-                                            Projects
-                                        </p>
-                                    </div>
-
-                                    <div className="bg-black/30 p-4 rounded-xl">
-                                        <h2 className="text-white text-2xl font-bold">
-                                            2+
-                                        </h2>
-
-                                        <p className="text-gray-400 text-sm">
-                                            Years Exp
-                                        </p>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                        </div>
+</div>
 
                     </div>
 
