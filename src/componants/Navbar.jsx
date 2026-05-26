@@ -68,7 +68,7 @@ const Navbar = () => {
             open ? "max-h-96 py-4" : "max-h-0"
           }`}
         >
-          <ul className="flex flex-col gap-5 pb-5">
+          <ul className="flex flex-col gap-6 pb-5 ">
             {navLinks.map((item) => (
               <li key={item.name}>
                 <NavLink
